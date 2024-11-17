@@ -200,6 +200,64 @@
         .tab-cont.active-tab{
             display: block;
         }
+        #services {
+        padding: 80px 0;
+        background-color: #121212; /* Dark background for the services section */
+        color: #fff;
+       }
+
+    .services-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+
+ .service-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+ .service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00e600; /* Green color for icons */
+}
+
+ .service-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+ .service-card p {
+    font-size: 16px;
+    color: #ababab;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
         /* Portfolio Section */
         #portfolio {
             padding: 80px 0;
@@ -254,7 +312,7 @@
 <body>
 
     <header>
-        <h1>Devin Fig</h1>
+        <h1>My Portfolio</h1>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -396,4 +454,3 @@
 
 </body>
 </html>
-
